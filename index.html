@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebApp desenvolvido pelo Irineu Delson - Desenvolvedor Font-End."
+    <meta name="author" content="Irineu Delson" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <title>IMC</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>IMC - Indece de Massa Corporal</h1>
+        </div> 
+         <hr />   
+    </header>
+    <main>
+        <div class="container">
+            <br onsubmit="return false;">
+                <label>Altura:</label>
+                <input type="text" placeholder="0,00" id="altura" onkeydown="verificarInput(event);"/>
+                <label>m</label><br /><br />
+                <label>Peso:</label>
+                <input type="text" placeholder="0,00" id="peso" onkeydown="verificarInput(event);" /><label>kg</label>
+                <br /><br />
+                <button onclick="imc();">Calcular IMC</button></br>
+                *Aperte F5 para limpar os campos
+                <!-- <button type="reset">Reiniciar</button> -->
+            </form>
+            <hr />
+            <h2 id="result"></h2>
+            <h2 id="imc"></h2>
+        </div>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
